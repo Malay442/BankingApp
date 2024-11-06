@@ -108,7 +108,7 @@ resource "aws_security_group" "mysg9" {
 resource "aws_instance" "instance9" {
   ami           = "ami-09b0a86a2c84101e1"
   instance_type = "t2.micro"
-  availability_zone = "ap-south-1b"
+  availability_zone = "ap-south-1a"
   associate_public_ip_address = true
   subnet_id = aws_subnet.mysubnet9.id
   vpc_security_group_ids = [aws_security_group.mysg9.id]
